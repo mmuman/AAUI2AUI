@@ -49,6 +49,8 @@ Note the external input is 5V and not 12V, which is a bit wasteful probably, but
 
 An internal fuse was considered, but the ones found supposedly rated for 2A didn't break at 4.5A so probably aren't useful anyway. If you fear for your hardware, or if it becomes unstable because of excessive power load, you can still use the external 5V input.
 
+The step-up board seems to generate quite some noise when close to the signal wires. Although it doesn't actually impact transmissions (ping -f still works fine). SZome conductive tape (aluminum or copper) around it seems to suppress those. It doesn't even seem necessary to wire it to ground or anything, so it can be left between insulation tapes.
+
 ### Mechanical
 
 The found 12V step-up board fits perfectly in the DA15 shell with the large side along the connector pins. Also, this placement leaves room for the cable in the middle, while other placement would have the inductance from the board in the middle of the cable.
@@ -57,7 +59,7 @@ The 1.3mm DC jack connector has the right dimensions to fit on the side of the D
 
 The slide-lock mechanism required for AUI, although probably not strictly necessary (and not always effective according to history), will require shaving some part of the DA15 shell, but this might make it not retain the connector itself.
 
-Some electrical insulation will be required around the jack leads and the step-up board. kapton-like tape should work fine there. If necessary some shielding of the step-up board might be added with some coper tape and another kapton tape over it.
+Some electrical insulation will be required around the jack leads and the step-up board. kapton-like tape should work fine there. Then a layer of copper tape is used to shield the step-up board and another kapton tape over it.
 
 Since the DA15 shell is some blue-gray color which doesn't really suit Apple products, some painting could be done on it after cutting it.
 
@@ -71,7 +73,7 @@ There is no reason this cable wouldn't work on any AAUI transceiver, but here is
 Model | Rated @ 12V | Measured @ 12V | Measured @ 5V
 ------|-------|----------------|--------------
 Allied Telesis CentreCom 210T | 300mA | 100mA | 250mA
-ISOLAN 1681-0 | 165mA | | 140mA
+ISOLAN 1681-0 | 165mA | 50mA | 140mA
 Accton EN2032 | | |
 
 
@@ -80,9 +82,9 @@ Accton EN2032 | | |
 - [ ] Make sure non-Apple cards don't send 12V on the 5V pins
 - [ ] Find how to make sure the DA15 shell stick on the connector
 - [ ] Try UHU Plast for the DC in jack
-- [ ] Assert 12V step-up interference, is shielding required?
-- [ ] Test labeling with double-sided tape and laser-printable transparent sheets
-- [ ] Find proper paint for the DA15 shell
+- [X] Assert 12V step-up interference, is shielding required?
+- [X] Test labeling with double-sided tape and laser-printable transparent sheets (actually some laser-printable transparent stickers will be used)
+- [X] Find proper paint for the DA15 shell
 - [ ] Write kit assembly guide
 - [ ] Fix pinouts.ru & Wikipedia
 - [ ] Publish DA15 shell cut template for the DC in jack hole
