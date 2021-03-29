@@ -11,7 +11,9 @@ It is just the same interface but with a different connector (Micro-D 14 pins in
 
 ## User manual
 
-TODO
+TL;DR: Plug the cable on the AAUI port on your Macintosh, plug an AUI transceiver in, plug an Ethernet cable, voila.
+
+![Setup guide for the AAUI2AUI cable](setup.png "Setup guide")
 
 ## Ordering
 
