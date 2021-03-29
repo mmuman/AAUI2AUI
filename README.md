@@ -9,9 +9,19 @@ The goal is to have a cheap cable to reuse existing AUI transceivers which can b
 It is just the same interface but with a different connector (Micro-D 14 pins instead of a Sub-D DA15), and 5V supply instead of 12V.
 
 
+## User manual
+
+TODO
+
 ## Ordering
 
 TODO
+
+## Kit assembly
+
+Complete assembly instructions: TODO
+
+![Wiring guide for the AAUI2AUI kit](wiring.png "Wiring guide")
 
 ## Theory of operation and design decisions
 
