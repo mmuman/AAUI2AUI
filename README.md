@@ -15,6 +15,10 @@ TL;DR: Plug the cable on the AAUI port on your Macintosh, plug an AUI transceive
 
 ![Setup guide for the AAUI2AUI cable](setup.png "Setup guide")
 
+Some precautions must be taken with the power consomption of the AUI transceiver, to minimize the load on the Macintosh power supply.
+
+See the full [user manual](manual.md).
+
 ## Ordering
 
 TODO
