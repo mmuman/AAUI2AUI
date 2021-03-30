@@ -15,7 +15,7 @@ TL;DR: Plug the cable on the AAUI port on your Macintosh, plug an AUI transceive
 
 ![Setup guide for the AAUI2AUI cable](setup.png "Setup guide")
 
-Some precautions must be taken with the power consomption of the AUI transceiver, to minimize the load on the Macintosh power supply.
+Some precautions must be taken with the power consumption of the AUI transceiver, to minimize the load on the Macintosh power supply.
 
 See the full [user manual](manual.md).
 
@@ -98,9 +98,10 @@ Accton EN2032 | | |
 - [ ] Make sure non-Apple cards don't send 12V on the 5V pins
 - [ ] Find how to make sure the DA15 shell stick on the connector
 - [ ] Try UHU Plast for the DC in jack
-- [X] Assert 12V step-up interference, is shielding required?
+- [X] Assert 12V step-up interference, is shielding required? It is.
 - [X] Test labeling with double-sided tape and laser-printable transparent sheets (actually some laser-printable transparent stickers will be used)
 - [X] Find proper paint for the DA15 shell
+- [X] Write user manual
 - [ ] Write kit assembly guide
 - [ ] Fix pinouts.ru & Wikipedia
 - [ ] Publish DA15 shell cut template for the DC in jack hole
