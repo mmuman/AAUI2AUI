@@ -6,7 +6,7 @@ wiring.pdf: wiring.odg
 	loffice --convert-to pdf $<
 
 wiring.png: wiring.odg
-	loffice --convert-to png $<
+	unoconv -o $@ -e Width=1024 -e Height=722 $<
 
 setup.png: setup.odg
-	loffice --convert-to png $<
+	unoconv -o $@ -e Width=1024 -e Height=277 $<
