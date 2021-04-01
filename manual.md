@@ -25,7 +25,7 @@ TL;DR: Plug the adapter cable on the AAUI port on your Apple™ Macintosh, plug 
 
 Connect the adapter cable to the AAUI port, then connect the transceiver to the DA15 connector of the adapter cable and secure the slide-lock. Finally, connect an RJ-45 Ethernet cable, or whatever medium your transceiver needs. You can now turn the computer on.
 
-If the computer becomes unstable or its available power budget is uncertain, use an external power supply on the 1.3mm barrel jack plug on the side of the DA15 connector, 5V center-positive. See below for power requirements.
+If the computer becomes unstable or its available power budget is uncertain, use an external power supply on the 1.3mm barrel jack plug on the side of the DA15 connector, 5V center-positive.
 
 # Power requirements
 
@@ -35,4 +35,4 @@ Some documents mention 1.9W for the 5V supply on the AAUI port, which gives 380m
 
 Although most transceivers use much less than the advertised rated current, prefer one rated for 150mA or less, or one of the validated models from the [list available on the website](https://github.com/mmuman/AAUI2AUI#tested-transceivers).
 
-When using an external supply the limit is higher, but to avoid overheating the internal step-up converter transceivers using more than 500mA should really be avoided.
+The limit is higher with an external supply, but to avoid overheating the internal step-up converter transceivers using more than 500mA should really be avoided. The step-up board is already warm at 120mA, and in a closed environment, so make sure it does not get hot before prolonged use.
