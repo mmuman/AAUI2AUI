@@ -83,14 +83,14 @@ Labeling can probably be done with a laser printer on some transparent sheets wi
 
 ## Tested transceivers
 
-There is no reason this cable wouldn't work on any AAUI transceiver, but here is a list of tested models, their official rating, and the measured intensity after and before the step-up board when doing a `ping -f` to the Mac.
+There is no reason this cable wouldn't work on any AAUI transceiver, but here is a list of tested models, their official rating, and the measured intensity after and before the step-up board when doing a `ping -f` to the Mac, or when idle, whatever the maximum (some actually use more when idle, because their LEDs are always on).
 
 
 Model | Rated @ 12V | Measured @ 12V | Measured @ 5V
 ------|-------|----------------|--------------
 Allied Telesis CentreCom 210T | 300mA | 100mA | 250mA
 ISOLAN 1681-0 | 165mA | 50mA | 140mA
-Accton EN2032 | | |
+Accton EN2032 | unknown | 120mA | 310mA
 
 
 ## TODOs
