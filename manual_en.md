@@ -8,7 +8,6 @@ papersize: A4
 documentclass: article
 # try to fit a single page
 margin-top: 0.5in
-#links-as-notes: true
 ---
 
 # Description

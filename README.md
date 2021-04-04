@@ -17,7 +17,7 @@ TL;DR: Plug the cable on the AAUI port on your Macintosh, plug an AUI transceive
 
 Some precautions must be taken with the power consumption of the AUI transceiver, to minimize the load on the Macintosh power supply.
 
-See the full [user manual](manual.md).
+See the full [user manual](manual_en.md). ([français](manual_fr.md))
 
 ## Ordering
 
@@ -95,6 +95,7 @@ Accton EN2032 | unknown | 120mA | 310mA
 
 ## TODOs
 
+- [ ] do we need thermal tape instead of kapton? assert thermal flow
 - [ ] Make sure non-Apple cards don't send 12V on the 5V pins
 - [ ] Find how to make sure the DA15 shell stick on the connector
 - [ ] Try UHU Plast for the DC in jack
