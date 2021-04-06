@@ -29,10 +29,10 @@ setup.pdf: setup.odg
 	unoconv -o $@ $<
 
 manual_%.pdf: manual_%.md setup.pdf
-	pandoc $< -o $@
+	sed 's/\.png /\.pdf /g' < $< | pandoc - -o $@
 
 assembly_%.pdf: assembly_%.md wiringa4.pdf
-	pandoc $< -o tmp_$@
+	sed 's/\.png /\.pdf /g' < $< | pandoc - -o tmp_$@
 	pdftk tmp_$@ dump_data output tmp_$@.info
 	pdftk A=tmp_$@ B=wiringa4.pdf cat A B output tmp2_$@
 	pdftk tmp2_$@ update_info tmp_$@.info output $@

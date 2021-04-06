@@ -20,7 +20,7 @@ Further information on the website: [https://github.com/mmuman/AAUI2AUI](https:/
 
 TL;DR: Plug the adapter cable on the AAUI port on your Apple™ Macintosh, plug an AUI transceiver to it, plug an Ethernet cable, and voila.
 
-![Setup guide for the AAUI2AUI cable](setup.pdf "Setup guide")
+![Setup guide for the AAUI2AUI cable](setup.png "Setup guide")
 
 Connect the adapter cable to the AAUI port, then connect the transceiver to the DA15 connector of the adapter cable and secure the slide-lock. Finally, connect an RJ-45 Ethernet cable, or whatever medium your transceiver needs. You can now turn the computer on.
 

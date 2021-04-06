@@ -21,7 +21,7 @@ Plus d'information sur le site web: [https://github.com/mmuman/AAUI2AUI](https:/
 
 **Pressé ?** Branchez le câble adaptateur sur le port AAUI de votre Apple™ Macintosh, branchez-y un *transceiver* AUI, et branchez un câble Ethernet, c'est tout.
 
-![Schéma de branchement de l'adaptateur AAUI2AUI](setup.pdf "Schéma d'installation")
+![Schéma de branchement de l'adaptateur AAUI2AUI](setup.png "Schéma d'installation")
 
 Connectez le câble adaptateur au port AAUI, puis connectez le *transceiver* au port DA15 du câble adaptateur et verrouillez le mécanisme à glissière. Finallement, connectez un câble Ethernet à la prise RJ-45, ou n'importe-quel autre medium que votre transceiver utilise. Allumez l'ordinateur.
 
