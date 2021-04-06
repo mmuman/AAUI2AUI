@@ -2,19 +2,12 @@
 # on Debian you need:
 # apt install make libreoffice unoconv pandoc pdfjam pdftk texlive texlive-lang-french
 
-OUT=	wiring.png \
+OUT=	wiring.png wiring.pdf wiringa4.pdf \
 	setup.pdf setup.png \
 	manual_en.pdf manual_fr.pdf \
 	assembly_en.pdf assembly_fr.pdf
 
 all: $(OUT)
-
-wiring.pdf: wiring.odg
-	loffice --convert-to pdf $<
-# If you get:
-# Error: Unable to connect or start own listener. Aborting.
-# You may retry after:
-# killall soffice.bin
 
 wiringa4.pdf: wiring.pdf
 	pdfjam $< --a4paper --angle 90 --outfile $@
@@ -25,8 +18,12 @@ wiring.png: wiring.odg
 setup.png: setup.odg
 	unoconv -o $@ -e Width=1024 -e Height=277 $<
 
-setup.pdf: setup.odg
+%.pdf: %.odg
 	unoconv -o $@ $<
+# If you get:
+# Error: Unable to connect or start own listener. Aborting.
+# You may retry after:
+# killall soffice.bin
 
 manual_%.pdf: manual_%.md setup.pdf
 	sed 's/\.png /\.pdf /g' < $< | pandoc - -o $@
