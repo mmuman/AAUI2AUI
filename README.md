@@ -67,6 +67,8 @@ An internal fuse was considered, but the ones found supposedly rated for 2A didn
 
 The step-up board seems to generate quite some noise when close to the signal wires. Although it doesn't actually impact transmissions (ping -f still works fine). SZome conductive tape (aluminum or copper) around it seems to suppress those. It doesn't even seem necessary to wire it to ground or anything, so it can be left between insulation tapes.
 
+Temperature is a concern though, with a 120mA load and the shell losely put back on, it was measured at 43°C, sometimes more. Although the board supposedly has an internal thermal protection, it is preferable to maximize the heat transfer from it to the outside of the DA15 shell. Bridging the insulated step-up PCB to the DA15 metal shield drops it to 37°C. Using some thermal transfer tape as used to put heatsinks on ICs should help. The found one has thermal conductivity of 1.2W/mk, which is at least 10 times that of kapton tape.
+
 ### Mechanical
 
 The found 12V step-up board fits perfectly in the DA15 shell with the large side along the connector pins. Also, this placement leaves room for the cable in the middle, while other placement would have the inductance from the board in the middle of the cable.
@@ -75,7 +77,7 @@ The 1.3mm DC jack connector has the right dimensions to fit on the side of the D
 
 The slide-lock mechanism required for AUI, although probably not strictly necessary (and not always effective according to history), will require shaving some part of the DA15 shell, but this might make it not retain the connector itself.
 
-Some electrical insulation will be required around the jack leads and the step-up board. kapton-like tape should work fine there. Then a layer of copper tape is used to shield the step-up board and another kapton tape over it.
+Some electrical insulation will be required around the jack leads and the step-up board. Some kapton tape is put over the jack and the exposed soldered pins on the DA15 connector. Heat-transfer double-sided tape will be used, one pad on each side. Then a layer of copper tape is used to shield the step-up board, wrapping around it and extending to the inner part of the DA15 metal shell.
 
 Since the DA15 shell is some blue-gray color which doesn't really suit Apple products, some painting could be done on it after cutting it.
 
