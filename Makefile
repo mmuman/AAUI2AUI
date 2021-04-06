@@ -9,6 +9,10 @@ OUT=	wiring.png wiring.pdf wiringa4.pdf \
 
 all: $(OUT)
 
+KITOUT= jack.png jack.pdf kit.pdf
+
+kit: $(KITOUT)
+
 wiringa4.pdf: wiring.pdf
 	pdfjam $< --a4paper --angle 90 --outfile $@
 
@@ -18,6 +22,9 @@ wiring.png: wiring.odg
 setup.png: setup.odg
 	unoconv -o $@ -e Width=1024 -e Height=277 $<
 
+%.png: %.odg
+	unoconv -o $@ $<
+
 %.pdf: %.odg
 	unoconv -o $@ $<
 # If you get:
@@ -25,8 +32,13 @@ setup.png: setup.odg
 # You may retry after:
 # killall soffice.bin
 
-manual_%.pdf: manual_%.md setup.pdf
+
+%.pdf: %.md
 	sed 's/\.png /\.pdf /g' < $< | pandoc - -o $@
+
+kit.pdf: kit.md jack.pdf
+
+manual_%.pdf: manual_%.md setup.pdf
 
 assembly_%.pdf: assembly_%.md wiringa4.pdf
 	sed 's/\.png /\.pdf /g' < $< | pandoc - -o tmp_$@
@@ -36,4 +48,4 @@ assembly_%.pdf: assembly_%.md wiringa4.pdf
 	rm tmp_$@ tmp2_$@ tmp_$@.info
 
 clean:
-	rm $(OUT)
+	rm $(OUT) $(KITOUT)
