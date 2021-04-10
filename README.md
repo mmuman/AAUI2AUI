@@ -8,6 +8,7 @@ The goal is to have a cheap cable to reuse existing AUI transceivers which can b
 
 It is just the same interface but with a different connector (Micro-D 14 pins instead of a Sub-D DA15), and 5V supply instead of 12V.
 
+In addition to the documentation provided here, there's a presentation video ([peertube](https://video.triplea.fr/videos/watch/24b77b46-9de3-44e4-bcaf-29360545abda), [youtube](https://www.youtube.com/watch?v=hwZyJYOrEWE)).
 
 ## User manual
 
@@ -77,7 +78,7 @@ The 1.3mm DC jack connector has the right dimensions to fit on the side of the D
 
 The slide-lock mechanism required for AUI, although probably not strictly necessary (and not always effective according to history), will require shaving some part of the DA15 shell, but this might make it not retain the connector itself.
 
-Some electrical insulation will be required around the jack leads and the step-up board. Some kapton tape is put over the jack and the exposed soldered pins on the DA15 connector. Heat-transfer double-sided tape will be used, one pad on each side. Then a layer of copper tape is used to shield the step-up board, wrapping around it and extending to the inner part of the DA15 metal shell.
+Some electrical insulation will be required around the jack leads and the step-up board. Some kapton tape is put over the jack and the exposed soldered pins on the DA15 connector. Heat-transfer double-sided tape will be used around the step-up board, one pad on each side. Then a layer of copper tape is used to shield the step-up board, wrapping around it and extending to the inner part of the DA15 metal shell.
 
 Since the DA15 shell is some blue-gray color which doesn't really suit Apple products, some painting could be done on it after cutting it.
 
@@ -97,7 +98,7 @@ Accton EN2032 | unknown | 120mA | 310mA
 
 ## TODOs
 
-- [ ] do we need thermal tape instead of kapton? assert thermal flow
+- [ ] Do we need thermal tape instead of kapton? assert thermal flow
 - [ ] Make sure non-Apple cards don't send 12V on the 5V pins
 - [ ] Find how to make sure the DA15 shell stick on the connector
 - [ ] Try UHU Plast for the DC in jack
@@ -107,5 +108,6 @@ Accton EN2032 | unknown | 120mA | 310mA
 - [X] Write user manual
 - [ ] Write kit assembly guide
 - [ ] Fix pinouts.ru & Wikipedia
-- [ ] Publish DA15 shell cut template for the DC in jack hole
+- [X] Draw DA15 shell cut template for the DC in jack hole
+- [ ] Publish kit preparation guide
 - [ ] Publish BOM and part sourcing infos
