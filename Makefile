@@ -9,7 +9,7 @@ OUT=	wiring.png wiring.pdf wiringa4.pdf \
 
 all: $(OUT)
 
-KITOUT= jack.png jack.pdf kit.pdf
+KITOUT= jack.png jack.pdf hole.png hole.pdf kit.pdf
 
 kit: $(KITOUT)
 
@@ -36,7 +36,7 @@ setup.png: setup.odg
 %.pdf: %.md
 	sed 's/\.png /\.pdf /g' < $< | pandoc - -o $@
 
-kit.pdf: kit.md jack.pdf
+kit.pdf: kit.md jack.pdf hole.pdf
 
 manual_%.pdf: manual_%.md setup.pdf
 
